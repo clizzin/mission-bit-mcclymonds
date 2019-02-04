@@ -1,7 +1,7 @@
 /* Flappy Bird
  *
  * Group members: Anthony Huynh, Caitlin Kantor, Liam Hubbert, Kyle Wong
- * Mission Bit @ Gateway HS, Fall 2016
+ * Mission Bit @ Lincoln HS, Fall 2016
  */
  
  
