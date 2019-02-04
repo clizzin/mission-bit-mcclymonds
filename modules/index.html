@@ -82,24 +82,6 @@
         web application or game. Show off your project on <a href="demoday/">Demo Day</a> 
         at the end of the semester!
       </blockquote>
-          
-      <h3>Daily attendance sheet</h3>
-      <div id="attendance-box">
-        <form id="attendance-form" onsubmit="addAttendee(this);">
-          <div>
-            <input name="name" placeholder="your name" type="text" maxlength=30 class="input form-control" />
-          </div>
-          <div>
-            <input name="notes" placeholder="remarks (optional)" maxlength=50 type="text" class="input form-control" />
-          </div>
-          <div id="attendance-form-btn">
-            <button type="submit" form="attendance-form" value="sign in" title="Sign the attendance sheet">
-              <i class="fa fa-pencil fa-2x"></i>
-            </button>
-          </div>
-        </form>
-      </div>
-      <div id="laptop-cart-organizers"></div>
 
       <h3>Introduction</h3>
       <ul>
@@ -138,42 +120,6 @@
     
     <!-- Highlight.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-
-    <!-- Seed random -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.3.10/seedrandom.min.js"></script>
-    <script>
-
-      (function () {
-
-        // Sets Math.random to a PRNG initialized using the given explicit seed.
-        Math.seedrandom(Date().substr(4, 6));
-
-        var students = [
-          "Jillian",
-          "Caelum",
-          "Christine",
-          "Edison",
-          "Emi",
-          "Ivan",
-          "Mary",
-          "Nikolaj",
-          "Otto",
-          "Rowin",
-          "Wendy",
-          "Aidan",
-          "Russell"
-        ];
-
-        var rIdx = Math.random() * students.length | 0;
-        var firstOrganizer = students.splice(rIdx, 1);
-        var secondOrganizer = students[Math.random()*students.length|0];
-
-        document.getElementById("laptop-cart-organizers").innerHTML = 
-          "<i>Today's <a href=\"../assets/beautiful_cart.jpg\">laptop cart organizers</a> are " + firstOrganizer + 
-          " and " + secondOrganizer + "</i>";
-      })();
-
-    </script>
 
     <!-- Global JS script -->
     <script src="../js/global.js"></script>
