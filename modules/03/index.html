@@ -27,7 +27,7 @@
 
     <main>
 
-                        <h1>Module 4: Add CSS to your adventure game</h1>
+                        <h1>Module 3: Add CSS to your HTML page</h1>
                         <p>
                           Objective: learn and use basic features of Cascading Style Sheets.
                         </p>
@@ -60,7 +60,7 @@
                         <hr>
                         <h2 id="css">CSS: adding style to your page</h2>
                         <p>
-                          I hope all of your games are coming along smoothly! I'm sure you're eager to spice up
+                          I hope all of your pages are coming along smoothly! I'm sure you're eager to spice up
                           your designs to look cooler than plain HTML, though. 
                           <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a> 
                           (Cascading Style Sheets) is the tool to take care of that.
@@ -90,9 +90,15 @@
                         <hr>
                         <h2 id="first-stylesheet">Your very first stylesheet</h2>
                         <p>
-                          CSS selectors can be placed in one of three ways: inside <code>&lt;style&gt;</code> tags in
-                          the <code>&lt;head&gt;</code> of an HTML document, as an in-line attribute 
-                          right inside an HTML tag, and in a separate <code>.css</code> file. You're welcome to do whichever you
+                          CSS selectors can be placed in one of three ways:
+                        </p>
+                        <ol>
+                          <li>in a separate <code>.css</code> file</li>
+                          <li>inside <code>&lt;style&gt;</code> tags in the <code>&lt;head&gt;</code> of an HTML document</li>
+                          <li>as an in-line attribute, right inside an HTML tag</li>
+                        </ol>
+                        <p>
+                          You're welcome to do whichever you
                           want, but the most powerful method is the external file because you only need to make one
                           <code>.css</code> file for your whole project, so that's what I'll focus on here.
                         </p>
@@ -103,12 +109,12 @@
                           <li>
                             <p>
                               Create a new file in the same folder as your <code>index.html</code> file 
-                              called <code>style.css</code>.
+                              called <code>main.css</code>.
                             </p>  
                           </li>
                           <li>
                             <p>
-                              Inside of <code>style.css</code>, write your first CSS selector:
+                              Inside of <code>main.css</code>, write your first CSS selector:
                             </p>
 <pre><code class="css">p {
   color: red;
@@ -116,18 +122,18 @@
                           </li>
                           <li>
                             <p>
-                              Save <code>style.css</code>, and head back to editing your <code>index.html</code> file.
+                              Save <code>main.css</code>, and head back to editing your <code>index.html</code> file.
                               Add the following element inside of the <code>&lt;head&gt;</code> tags. This loads the 
                               CSS file and applies its selectors to the HTML document. You can reference the same
                               stylesheet from as many HTML files as you want:
                             </p>
-<pre><code class="html">&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+<pre><code class="html">&lt;link rel="stylesheet" href=""&gt;</code></pre>
                           </li>  
                         </ol>
                         <p>
                           And you're done! Open your <code>index.html</code> file in a browser and you should see 
                           all of your paragraphs have a <span style="color: red;">red</span> font color. 
-                          In your <code>style.css</code> file, try changing <code>p</code> to <code>a</code>. 
+                          In your <code>main.css</code> file, try changing <code>p</code> to <code>a</code>.
                           Refresh the website and see how the results change. Feel free to add as many selectors
                           as you like, and experiment with different properties. 
                         </p>
@@ -256,7 +262,7 @@ p {
                           <li>
                             <p>
                               Copy and paste the line between the <code>&lt;style&gt;</code> tags and 
-                              paste it at the top of your <code>style.css</code> file, outside of any selectors:
+                              paste it at the top of your <code>main.css</code> file, outside of any selectors:
                             </p>
 <pre><code class="css">@import url('https://fonts.googleapis.com/css?family=Bitter');</code></pre>
                           </li>
@@ -302,16 +308,9 @@ p {
                         <hr style="clear: both;">
                         <h2 id="fin">Fin!</h2>
                         <p>
-                          OK, that should give you *plenty* of control over your HTML adventure game's 
+                          OK, that should give you *plenty* of control over your HTML page's
                           design. Go at it! 
                         </p>
-                        <p>
-                          <a href="../05/">Next module</a>, we'll leave HTML and CSS behind and embark on JavaScript, which is 
-                          really the meat of the class. If you have time, get a head
-                          start on JS over at <a href="https://www.codecademy.com/learn/javascript">Codecademy</a>!
-                        </p>  
-                        <img alt="Titanic CSS meme" style="max-width: 500px;"
-                          src="https://d13yacurqjgara.cloudfront.net/users/203999/screenshots/1828181/titanic_2x.png" />
     </main>
 
     <!-- jQuery -->
